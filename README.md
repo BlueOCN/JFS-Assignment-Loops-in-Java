@@ -18,7 +18,7 @@ Do-while loops perform similarly to while loops, but executes code once before c
 
 ---
 
-## Assignment 1: Using For Loops
+## Part 1: Using For Loops
 
 ### Introduction: 
 For loops are a fundamental control structure in Java that allows you to execute a block of code a specific number of times. In this assignment, you will learn how to use for loops to perform repetitive tasks.
@@ -44,7 +44,7 @@ for (int i = 0; i < 5; i++) {
 
 ---
 
-## Assignment 2: Using While Loops
+## Part 2: Using While Loops
 
 ### Introduction: 
 While loops are another fundamental control structure in Java that allows you to execute a block of code as long as a specified condition is true. By creating a program that sums the digits of a given number, you will learn how to use while loops to perform tasks that require repeated execution based on a condition.
@@ -85,7 +85,7 @@ The sum of the digits is: 15
 
 ---
 
-## Assignment 3: Using Do-While Loops
+## Part 3: Using Do-While Loops
 
 ### Introduction: 
 Do-while loops are similar to while loops, but the block of code is executed at least once before the condition is tested. In this assignment, you will expand on the basic calculator assignment from the previous module and learn how to use do-while loops to perform tasks that require at least one execution before checking the condition.
