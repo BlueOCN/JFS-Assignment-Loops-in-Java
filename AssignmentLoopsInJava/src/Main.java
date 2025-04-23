@@ -86,5 +86,63 @@ public class Main {
 
         } while (choice.equals("Y") || choice.equals("YES"));
 
+
+        //TIP Part 3: Using Do-While Loops
+
+        // Print Welcome
+        System.out.println("Welcome to the Calculator!");
+
+        do {
+            // Print Menu
+            System.out.println("\nPlease select an operation: ");
+            System.out.println("1. Addition");
+            System.out.println("2. Subtraction");
+            System.out.println("3. Multiplication");
+            System.out.println("4. Division");
+            System.out.println("5. Exit");
+
+            // User Input
+            Scanner sc4 = new Scanner(System.in);
+            System.out.print("\nEnter your choice: ");
+            int operation = sc4.nextInt();
+            if (operation == 5) {
+                System.out.println("\nExiting the calculator. Thank you!");
+                break;
+            }
+
+            System.out.print("\nEnter the first number: ");
+            int inputNum1 = sc4.nextInt();
+            System.out.print("Enter the second number: ");
+            int inputNum2 = sc4.nextInt();
+            System.out.println();
+
+            // Compute
+            int result;
+            switch (operation) {
+                case 1:
+                    result = inputNum1 + inputNum2;
+                    System.out.println("Result: " + inputNum1 + " + " + inputNum2 + " = " + result);
+                    break;
+                case 2:
+                    result = inputNum1 - inputNum2;
+                    System.out.println("Result: " + inputNum1 + " - " + inputNum2 + " = " + result);
+                    break;
+                case 3:
+                    result = inputNum1 * inputNum2;
+                    System.out.println("Result: " + inputNum1 + " * " + inputNum2 + " = " + result);
+                    break;
+                case 4:
+                    if (inputNum2 != 0) {
+                        System.out.println("Result: " + inputNum1 + " / " + inputNum2 + " = " + (inputNum1 / inputNum2));
+                    } else {
+                        System.out.println("Error: Division by zero is not allowed.");
+                    }
+                    break;
+                default:
+                    System.out.println("Error: Invalid input.");
+                    break;
+            }
+
+        } while (true);
     }
 }
